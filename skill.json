@@ -1,0 +1,32 @@
+{
+  "name": "genpark-agent-tool-retry-exponential-backoff-jitter-skill",
+  "version": "1.0.0",
+  "description": "Fault-tolerant agent tool execution wrapper featuring adaptive exponential backoff, full jitter, rate-limit 429 backpressure handling, and circuit breaker patterns.",
+  "category": "Service",
+  "author": "AlphaPark",
+  "tags": [
+    "retry-backoff",
+    "full-jitter",
+    "circuit-breaker",
+    "resilience4j",
+    "mcp"
+  ],
+  "tools": [
+    {
+      "name": "calculate_backoff_delay",
+      "description": "Calculate backoff duration using exponential backoff with full jitter."
+    },
+    {
+      "name": "is_retryable_error",
+      "description": "Classify HTTP status code or error into retryable vs non-retryable."
+    },
+    {
+      "name": "execute_with_retry",
+      "description": "Execute function with adaptive backoff and circuit breaker protection."
+    },
+    {
+      "name": "run_resilience_benchmark",
+      "description": "Run fault-tolerance and rate-limit recovery benchmark."
+    }
+  ]
+}
